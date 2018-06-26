@@ -1,0 +1,18 @@
+/* CSS TEMPLATE */
+body {
+    color: red;
+ color: red; /* цвет фона*/   font-size: 3em;
+}
+
+.class {
+    color:GREEN;
+}
+
+#id {
+}
+
+div #id_selctor {
+    color: RED;
+} 
+
+/* Многострочный комментарий */

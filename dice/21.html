@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="text-center">21</h1>
+
+<h1 class="text-center">
+    <button class="btn btn-info reload">Новая игра</button>
+</h1>
+
+<div class="container">
+    <div class="row">
+        <!-- Герой -->
+        <div class="col-6">
+            <div class="hero">
+                <button class="btn btn-primary pick_card">Тянуть карту</button>
+
+                <div>Вытянута карта: <label class="drag_points">0</label></div>
+                <div>Текущее значение: <label class="points">0</label></div>
+                <div>Результат: <label class="result text-success">Ожидаем</label></div>
+            </div>
+        </div>
+
+
+        <!-- Соперник -->
+        <div class="col-6">
+            <div class="enemy">
+                <button class="btn btn-primary pick_card">Тянуть карту</button>
+
+                <div>Вытянута карта: <label class="drag_points">0</label></div>
+                <div>Текущее значение: <label class="points">0</label></div>
+                <div>Результат: <label class="result text-success">Ожидаем</label></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<hr>
+Валера: <input class="btn btn-secondary"  type="number" min="0" max="3" step="1" value="0"><br>
+Миша: <input class="btn btn-dark" type="number" min="0" max="3" step="1" value="0"><hr>
+Матч: <input class="btn btn-secondary"  type="number" min="0" step="1" value="0"><input class="btn btn-dark"  type="number" min="0"  step="1" value="0"><br>
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--Свои скрипты-->
+<script src="js/21.js"></script>
+</body>
+</html>

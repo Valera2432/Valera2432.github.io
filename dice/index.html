@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Forge</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="h1 text-center">Грани Судьбы</h1>
+
+<button class="btn badge-success" onclick="add_card()">Добавить карту</button>
+<button class="btn badge-success" onclick="add_some_card(6)">Раздать карты</button>
+<br>
+<button class="btn badge-success" onclick="remove_card()">Удалить карту</button>
+<button class="btn badge-success" onclick="remove_all_card('#enemy')">Собрать карты</button>
+<button type="button" class="btn btn-primary" onclick="change_image(5)"> Поменять картинку</button>
+
+<div id="enemy" class="container">
+    <div class="row">
+        <!--<div class="col-3">-->
+        <!--<div class="card">-->
+        <!--<img class="card-img-top" src="image/back.jpg" alt="Card image cap">-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<hr>
+<br><br><br>
+<hr>
+<div id="friend" class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <img class="card-img-top" src="image/dama.jpg" alt="Card image cap">
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+
+                <div class="card">
+                    <img class="card-img-top" src="image/dama.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Мой президент</h5>
+                        <p class="card-text">Управленец всея мира</p>
+                        <a href="#" class="btn btn-primary" onclick="successfully();">Сделать <br>подношение</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+
+                <div class="card">
+                    <img class="card-img-top" src="image/putin_zevs_molniy.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Мой президент</h5>
+                        <p class="card-text">Управленец всея мира</p>
+                        <a href="#" class="btn btn-primary">Сделать <br>подношение</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card">
+                    <img class="card-img-top" src="image/putin_zevs_molniy.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Мой президент</h5>
+                        <p class="card-text">Управленец всея мира</p>
+                        <a href="#" class="btn btn-primary">Сделать <br>подношение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card">
+                    <img class="card-img-top" src="image/putin_zevs_molniy.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Мой президент</h5>
+                        <p class="card-text">Управленец всея мира</p>
+                        <a href="#" class="btn btn-primary">Сделать <br>подношение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--Свои скрипты-->
+<script src="js/script.js"></script>
+<p id="testId"></p>
+</body>
+</html>

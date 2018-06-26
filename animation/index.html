@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+    
+<head> 
+<title>Анимация</title> 
+<meta charset="utf-8"> 
+    
+<style> body {
+  padding-top: 50px;
+  background: #F7F7F7;
+  -webkit-perspective: 800px;
+}
+h1{
+  text-align: center;
+}
+#coin {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+#coin div {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+     -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+          box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+}
+.side-a {
+  background-color: rebeccapurple;
+}
+.side-b {
+  background-color: #3e3e3e;
+}
+
+#coin {
+  transition: -webkit-transform 1s ease-in;
+  -webkit-transform-style: preserve-3d;
+}
+#coin div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.side-a {
+  z-index: 100;
+}
+.side-b {
+  -webkit-transform: rotateY(-180deg);
+
+}
+
+#coin.heads {
+  -webkit-animation: flipHeads 3s ease-out forwards;
+  -moz-animation: flipHeads 3s ease-out forwards;
+    -o-animation: flipHeads 3s ease-out forwards;
+       animation: flipHeads 3s ease-out forwards;
+}
+#coin.tails {
+  -webkit-animation: flipTails 3s ease-out forwards;
+  -moz-animation: flipTails 3s ease-out forwards;
+    -o-animation: flipTails 3s ease-out forwards;
+       animation: flipTails 3s ease-out forwards;
+}
+
+@-webkit-keyframes flipHeads {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+}
+@-webkit-keyframes flipTails {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1980deg); -moz-transform: rotateY(1980deg); transform: rotateY(1980deg); }
+}
+
+
+</style> 
+    <script></script>
+
+</head> 
+<body> 
+ <div id="coin">
+  <div class="side-a"></div>
+  <div class="side-b"></div>
+</div>
+<h1>Click on coin to flip</h1>   
+    
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    
+  <h1>Пример заголовка <span class="badge badge-secondary">New</span></h1>  <!-- Делает кнопку -->
+    <script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+        <!-- Делает группу кнопок -->
+        
+        
+        
+        
+        
+        <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Название карточки</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+  </div>
+</div>
+        <!-- Делает карточку -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Название карточки</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  jQuery(document).ready(function($){
+
+  $('#coin').on('click', function(){
+    var flipResult = Math.random();
+    $('#coin').removeClass();
+    setTimeout(function(){
+      if(flipResult <= 0.5){
+        $('#coin').addClass('heads');
+        console.log('it is head');
+      }
+      else{
+        $('#coin').addClass('tails');
+        console.log('it is tails');
+      }
+    }, 100);
+  });
+});
+ 
+    </script>
+</body> 
+</html>

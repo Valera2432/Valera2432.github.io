@@ -1,0 +1,10 @@
+.card:hover {
+    /*box-shadow: #1b1e21;*/
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.fixed_card {
+    высота: 100px;
+    ширина: 100px;
+
+}
